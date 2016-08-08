@@ -1,0 +1,1 @@
+{"virtualbox":{"/home/vagrant/hairbylenaj-com":{"type":null,"mount_options":[],"guestpath":"/home/vagrant/hairbylenaj-com","hostpath":"/Users/andreasbeasley/sites/hairbylenaj.com","disabled":false,"__vagrantfile":true},"/vagrant":{"guestpath":"/vagrant","hostpath":"/Users/andreasbeasley/sites/hairbylenaj.com","disabled":false,"__vagrantfile":true}}}
