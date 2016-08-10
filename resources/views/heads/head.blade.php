@@ -24,11 +24,7 @@
 <link rel="stylesheet" type="text/css" href="{{ url('css/responsive.css') }}">
 <!-- purple-responsive -->
 <link rel="stylesheet" type="text/css" href="{{ url('css/colors/purple-responsive.css') }}">
-
 <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-
-
-
 <!-- color -->
 <link rel="stylesheet" type="text/css" href="{{ url('css/colors/blue.css') }}">
 <!-- blue-responsive -->
