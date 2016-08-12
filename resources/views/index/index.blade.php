@@ -108,23 +108,37 @@
                 <p class="content" style="font-size:14px;">Longer is better! Adding length to your hair is an instantaneous transformation to being a glamazon or Goddess.  </p>
             </div>
         </div>
-        <div class="row border-bottom os-animation text-center" data-os-animation="fadeInUp">
-            <div class="col-md-12 col-sm-12">
-                <div class="row">
-                    <div class="col-md-3 col-sm-3 fashion-service-box border-right text-center" style="padding-top:15px;padding-bottom: 15px;">
-                        <img src="/images/official-distributer-mayven.jpg"  height="225" width="92%"/>
-                    </div>
-                    <div class="col-md-6 col-sm-6 title-text border-right">
-                        <h2 class="title"><a href="http://www.hairbylenaj.mayvenn.com"><img src="/images/Mayven%20Logo%20Clear.png" target="_blank" style="height: 96px;width: auto;"/></a></h2>
-                    </div>
-                    <div class="col-md-3 col-sm-3 fashion-service-box text-center" style="padding-top:15px;padding-bottom: 15px;">
-                        <img alt="" src="/images/30day-mayven.jpg" height="225" width="92%"/>
-                    </div>
-                </div>
-            </div>
-        </div>
     </div>
 </section>
 
+<h1 class="align-center" style="float: none !important;margin: 0;padding: 40px 0 45px 0;text-align: center;"><a href="http://www.hairbylenaj.mayvenn.com"><img src="/images/Mayven%20Logo%20Clear.png" target="_blank" style="height: 96px;width: auto;"/></a></h1>
 <h1 class="align-center" style="font-size: 40px;  background-color: #28aa84;float: none !important;margin: 0;padding: 16px 0 18px 0;text-align: center;"><a style="color: #fff;" href="https://www.schedulicity.com/scheduling/HBLZFE" target="_blank">Schedule your Appointment here</a></h1>
+@endsection
+
+@section('popup')
+<div id="bogo" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body">
+                <p><img src="/images/bogo.jpg"/></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(window).load(function(){
+        $('#bogo').modal('show');
+    });
+</script>
 @endsection

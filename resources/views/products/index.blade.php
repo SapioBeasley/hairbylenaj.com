@@ -74,7 +74,7 @@
                             <div class="col-md-4 col-sm-4"><div class="dishes-main">
                                     <div class="dishes-main-img"></div>
                                     <div class="dishes-main-text">
-                                        <h4>Premier <span>($64-$154)</span></h4>
+                                        {{-- <h4>Premier <span>($64-$154)</span></h4>
                                         <p>Mayvenn Premier collection includes a full spectrum of bundles and closures trusted and installed by thousands of Mayvenn stylists.  Premier hair is ready for everyday and every style.</p>
                                         <strong>Weight:</strong> 3.5oz<br>
                                         <strong>Material:</strong> High quality human hair<br>
@@ -83,7 +83,7 @@
                                         <strong>Product line:</strong> 3-6 months with proper care<br>
                                         <strong>Grade:</strong> (6-A) High quality human hair<br>
                                         <strong>Texture:</strong> Straight, Body Wave, Loose Wave, Deep Wave and Curly<br>
-                                        <strong>Length:</strong> 12-28in bundles (Blonde 14-26in bundles) 14, 18in silk and laced closures<br>
+                                        <strong>Length:</strong> 12-28in bundles (Blonde 14-26in bundles) 14, 18in silk and laced closures<br> --}}
                                         <a class="small-button-red inner-link" href="https://hairbylenaj.mayvenn.com/">Shop Now</a>
                                     </div>
                                 </div>
@@ -92,7 +92,7 @@
                             <div class="col-md-4 col-sm-4"><div class="dishes-main">
                                     <div class="dishes-main-img"></div>
                                     <div class="dishes-main-text">
-                                        <h4>Deluxe <span>($89-$169)</span></h4>
+                                        {{-- <h4>Deluxe <span>($89-$169)</span></h4>
                                         <p>Mayvenn Deluxe is an introduction to effortless luxury.  Consistently longer strands in a single bundle providing more natural flow and body.  Deluxe hair delivers a feeling of lasting elegance.</p>
                                         <strong>Weight:</strong> 3.5oz<br>
                                         <strong>Material:</strong> High quality Remy raw hair<br>
@@ -101,7 +101,7 @@
                                         <strong>Product Life:</strong> 6-12 months with proper care<br>
                                         <strong>Grade:</strong> (7-A) High quality Remy hair<br>
                                         <strong>Texture:</strong> Straight, Body Wave, Loose Wave, Deep Wave and Curly<br>
-                                        <strong>Length:</strong>12-24in bundles<br>
+                                        <strong>Length:</strong>12-24in bundles<br> --}}
                                         <a class="small-button-red inner-link" href="https://hairbylenaj.mayvenn.com/">Shop Now</a>
                                     </div>
                                 </div>
@@ -110,7 +110,7 @@
                             <div class="col-md-4 col-sm-4"><div class="dishes-main">
                                     <div class="dishes-main-img"></div>
                                     <div class="dishes-main-text">
-                                        <h4>Ultra <span>($139-$239)</span></h4>
+                                        {{-- <h4>Ultra <span>($139-$239)</span></h4>
                                         <p>Mayvenn Ultra appeals to the refined senses of women with no limits.  Ultra bundles are collected from a single donor to maintain the most luster and natural flow of any Mayvenn hair.</p>
                                         <strong>Weight:</strong> 3.5oz<br>
                                         <strong>Material:</strong> Virgin Remy raw hair single donor<br>
@@ -119,7 +119,7 @@
                                         <strong>Product life:</strong> 12-24 months with proper care<br>
                                         <strong>Grade:</strong> (8-A) Top quality virgin hair<br>
                                         <strong>Texture:</strong> Straight, Body Wave, Loose Wave, Deep Wave and Curly<br>
-                                        <strong>Length:</strong> 12-24in bundles<br>
+                                        <strong>Length:</strong> 12-24in bundles<br> --}}
                                         <a class="small-button-red inner-link" href="https://hairbylenaj.mayvenn.com/">Shop Now</a>
                                     </div>
                                 </div>
@@ -133,9 +133,9 @@
 
                             <a href="https://hairbylenaj.mayvenn.com/" style="font-size: 40px;margin: 0;padding: 16px 0 18px 0;text-align: center;"></a>
 
-                            <div class="col-md-3"><img src="{{ url('images/lenaj-express-free.jpg') }}"></div>
+                            {{-- <div class="col-md-3"><img src="{{ url('images/lenaj-express-free.jpg') }}"></div> --}}
                             <div class="col-md-6" style="text-align:center"><img src="{{ url('images/lenaj-middle.png') }}" style="width:90%"></div>
-                            <div class="col-md-3"><img src="{{ url('images/lenaj-closure.jpg') }}"></div>
+                            {{-- <div class="col-md-3"><img src="{{ url('images/lenaj-closure.jpg') }}"></div> --}}
 
                             <div class="col-md-10 col-md-offset-1" style="text-align:center;margin-top:40px;">
 
@@ -192,12 +192,38 @@
 
 
 <style type="text/css">
-
-    .seasonal-dishes {
-  background: url({{ url('images/seasonal-dishes-bg.jpg') }}) no-repeat center top fixed;
+.seasonal-dishes {
+  background: url(<?php echo url('images/seasonal-dishes-bg.jpg') ?>) no-repeat center top fixed;
   -webkit-background-size: cover;
   background-size: cover;
 }
-
 </style>
+@endsection
+
+@section('popup')
+<div id="bogo" class="modal fade" role="dialog">
+    <div class="modal-dialog">
+
+        <!-- Modal content-->
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal">&times;</button>
+                <h4 class="modal-title"></h4>
+            </div>
+            <div class="modal-body">
+                <p><img src="/images/bogo.jpg"/></p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<script type="text/javascript">
+    $(window).load(function(){
+        $('#bogo').modal('show');
+    });
+</script>
 @endsection
