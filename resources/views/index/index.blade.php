@@ -5,7 +5,7 @@
     <nav class="navbar navbar-default navbar-fixed-top nav-transparent overlay-nav sticky-nav" role="navigation">
         <div class="container main-navigation">
             <div class="col-md-3">
-                <a class="logo-dark" href="#" style="float: left">
+                <a class="logo-dark" href="{{url('/')}}" style="float: left">
                     <img alt="logo-dark" src="images/logo-dark.svg" class="logo-dark" style="width: 100% !important; margin-top: -10px;"/>
                 </a>
             </div>
@@ -112,33 +112,10 @@
 </section>
 
 <h1 class="align-center" style="float: none !important;margin: 0;padding: 40px 0 45px 0;text-align: center;"><a href="http://www.hairbylenaj.mayvenn.com"><img src="/images/Mayven%20Logo%20Clear.png" target="_blank" style="height: 96px;width: auto;"/></a></h1>
+
 <h1 class="align-center" style="font-size: 40px;  background-color: #28aa84;float: none !important;margin: 0;padding: 16px 0 18px 0;text-align: center;"><a style="color: #fff;" href="https://www.schedulicity.com/scheduling/HBLZFE" target="_blank">Schedule your Appointment here</a></h1>
 @endsection
 
 @section('popup')
-<div id="bogo" class="modal fade" role="dialog">
-    <div class="modal-dialog">
-
-        <!-- Modal content-->
-        <div class="modal-content">
-            <div class="modal-header">
-                <button type="button" class="close" data-dismiss="modal">&times;</button>
-                <h4 class="modal-title"></h4>
-            </div>
-            <div class="modal-body">
-                <p><img src="/images/bogo.jpg"/></p>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-
-    </div>
-</div>
-
-<script type="text/javascript">
-    $(window).load(function(){
-        $('#bogo').modal('show');
-    });
-</script>
+@include('includes.popup')
 @endsection
