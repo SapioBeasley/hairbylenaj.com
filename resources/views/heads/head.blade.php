@@ -4,8 +4,8 @@
 <!-- favicon -->
 <link rel="shortcut icon" href="images/ffavicon.png" />
 <!-- google font -->
-<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" />
-<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Oswald:300,400,700" />
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" />
+<link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Oswald:300,400,700" />
 <!-- font awesome-->
 <link rel="stylesheet" type="text/css" href="{{ url('css/font-awesome.min.css') }}" />
 <!-- Animation -->
@@ -30,5 +30,5 @@
 <!-- blue-responsive -->
 <link rel="stylesheet" type="text/css" href="{{ url('css/colors/blue-responsive.css') }}">
 
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>

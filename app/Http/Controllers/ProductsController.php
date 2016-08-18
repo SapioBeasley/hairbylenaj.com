@@ -8,8 +8,13 @@ use App\Http\Requests;
 
 class ProductsController extends Controller
 {
-  public function index()
+  public function hair()
   {
-    return view('products.index');
+    return view('products.hair');
+  }
+
+  public function brush()
+  {
+    return view('products.brush');
   }
 }

@@ -41,9 +41,14 @@ Route::get('discover', [
   'uses' => 'DiscoversController@index'
 ]);
 
-Route::get('products', [
-  'as' => 'products',
-  'uses' => 'ProductsController@index'
+Route::get('products/brush', [
+  'as' => 'products.brush',
+  'uses' => 'ProductsController@brush'
+]);
+
+Route::get('products/hair', [
+  'as' => 'products.hair',
+  'uses' => 'ProductsController@hair'
 ]);
 
 Route::get('contact', [

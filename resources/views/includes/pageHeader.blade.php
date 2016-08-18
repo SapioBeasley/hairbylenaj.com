@@ -4,7 +4,7 @@
   <nav class="navbar navbar-default navbar-fixed-top nav-transparent overlay-nav sticky-nav" role="navigation">
     <div class="container main-navigation">
       <div class="col-md-3 float-left">
-        <a class="logo-dark" href="#">
+        <a class="logo-dark" href="{{ url('/') }}">
           <img width="100%" alt="logo-dark" src="{{ url('images/logo-dark.svg') }}" class="logo-dark" />
         </a>
       </div>

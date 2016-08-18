@@ -36,7 +36,7 @@ Version:1.0.0
 @media screen and (max-width:600px) {
     .purple .white-bg { height: 100%; overflow: hidden; opacity: 0.9 }
     .purple .simple-text { width: 100% !important; }
-    .purple .model-box { background: url(http://themezaa.com/html/sturlly/css/images/about-model.jpg) no-repeat -420px top; }
+    /*.purple .model-box { background: url(http://themezaa.com/html/sturlly/css/images/about-model.jpg) no-repeat -420px top; }*/
     .purple .model-box .simple-text { margin-top: 30px !important; text-align: center; width: 100% !important; }
 }
 @media screen and (max-width:480px) {
@@ -47,17 +47,17 @@ Version:1.0.0
 }
 @media screen and (max-width:420px) {
     .purple .gallery ul li { width: 100%; }
-    .purple .chart span, 
-    .purple .chart2 span, 
+    .purple .chart span,
+    .purple .chart2 span,
     .purple .chart3 span { top: 34%; }
     .purple .pp_details { width: 240px; }
     .purple .lead { margin-top: 8%; }
 }
 @media screen and (max-width:320px) {
-    .purple .chart span, 
-    .purple .chart2 span, 
+    .purple .chart span,
+    .purple .chart2 span,
     .purple .chart3 span { font-size: 32px; top: 44%; }
     .purple .slider-text { height: 75%; }
     .purple .contact-info { margin-top: 0; }
-    
+
 }

@@ -9,6 +9,8 @@
         <div class="main">
             @yield('content')
 
+            <div id="instafeed"></div>
+
             @include('footers.footer')
         </div>
         <!-- main page end -->
@@ -76,6 +78,17 @@
     </body>
 
     @include('includes.scripts')
+
+    <script type="text/javascript" src="bower_components/instafeed.js/instafeed.min.js"></script>
+
+    <script type="text/javascript">
+        var feed = new Instafeed({
+            get: 'tagged',
+            tagName: 'awesome',
+            clientId: 'c167b5c57f28467ab2551af6c7a3d187'
+        });
+        feed.run();
+    </script>
 
     @yield('popup')
 
