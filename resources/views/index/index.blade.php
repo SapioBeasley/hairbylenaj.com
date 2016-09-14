@@ -109,9 +109,12 @@
             </div>
         </div>
     </div>
+
 </section>
 
 <h1 class="align-center" style="float: none !important;margin: 0;padding: 40px 0 45px 0;text-align: center;"><a href="http://www.hairbylenaj.mayvenn.com"><img src="/images/Mayven%20Logo%20Clear.png" target="_blank" style="height: 96px;width: auto;"/></a></h1>
+
+@include('includes.slider')
 
 <h1 class="align-center" style="font-size: 40px;  background-color: #28aa84;float: none !important;margin: 0;padding: 16px 0 18px 0;text-align: center;"><a style="color: #fff;" href="https://www.schedulicity.com/scheduling/HBLZFE" target="_blank">Schedule your Appointment here</a></h1>
 @endsection
